@@ -6,13 +6,14 @@
 
 2、内容规划
 
-n 页面头部：设计网站LOGO标题：apple的logo，添加了搜索栏和各个网页的链接。
+-  页面头部：设计网站LOGO标题：apple的logo，添加了搜索栏和各个网页的链接。
 
-n 栏目导航：单击可以进入其它各内容页面，便于用户进入其他页面。
+-  栏目导航：单击可以进入其它各内容页面，便于用户进入其他页面。
 
-n 具体内容：本页的具体内容包括：缅怀乔布斯图片，以及乔布斯主要作品的图片，以及底部的一些列表。
+- 具体内容：本页的具体内容包括：缅怀乔布斯图片，以及乔布斯主要作品的图片，以及底部的一些列表。
 
-n 版权声明：在页脚部分，另外有一些链接（本网页中没有实现链接）。
+-  版权声明：在页脚部分，另外有一些链接（本网页中没有实现链接）。
+
 
 3、LOGO设计
 
@@ -36,9 +37,9 @@ n 版权声明：在页脚部分，另外有一些链接（本网页中没有实
 
 该网站的主色彩是灰色和白色，配以少量的黑色，文字也为偏灰色，如下图所示：
 
-![img](file:///C:\Users\YLD\AppData\Local\Temp\ksohtml6620\wps1.jpg) 
+![img](./images/applecss(1).jpg)
 
-图1 配色采集
+<center>图1 配色采集<center>
 
  
 
@@ -66,275 +67,161 @@ n 版权声明：在页脚部分，另外有一些链接（本网页中没有实
 
 ## 三、HTML页面结构图
 
-![img](file:///C:\Users\YLD\AppData\Local\Temp\ksohtml6620\wps2.jpg) 
+![img](./images/applecss(2).jpg)
 
-图1 主页结构图
+<center>图2 页面结构图</center>
 
  
 
 ## 四、页面DIV结构代码
 
-## 五、CSS代码及注释
-
+```css
+<div id="container">
+  <div id=”menu”></div>
+  <div id=”images”></div>
+  <div id=”bottom”>
+<div id=”bottom1”>
+</div>
+<div id=”bottom2”>
+</div>
+<div id=”bottom3”>
+</div>
+<div id=”bottom4”>
+</div>
+  </div>
+  <div id=”footer”></div>
+</div>
 ```
 
 
+
+## 五、CSS代码及注释
+
+```css
 body{
-
-​	text-align:center;
-
-​	background-color:#F1F1F1;
-
-​	}
-
-\#container{
-
-​	width:1895px;
-
-​	margin:1px auto 0px auto;
-
-​	position:relative;
-
-​		
-
+	text-align:center;
+	background-color:#F1F1F1;
+	}
+#container{
+	width:1895px;
+	margin:1px auto 0px auto;
+	position:relative;
+		
 }
-
-\#menu {
-
-​		 font-family:Arial;
-
-​		 font-size:16px;
-
-​		 margin:0 0 0 0;
-
-​		 background: #323232;
-
-​		 padding-bottom:12px;
-
-​		 height:42px;
-
-​		 width:100%;
-
-​		 
-
+#menu {
+		  font-family:Arial;
+		  font-size:16px;
+		  margin:0 0 0 0;
+	  background: #323232;
+		  padding-bottom:12px;
+		  height:42px;
+		  width:100%;
+		  
 }
-
-\#menu ul {
-
-​		 display:block;	
-
- 		 padding:0 0 0 450px; 
-
-  	 margin:0; 
-
-​     list-style-type:none;
-
-​     height:35px;
-
-​     }
-
-\#menu ul li {
-
-​		 float:left;
-
-​		 }
-
-\#menu ul li a p{
-
-​		 display:block;
-
-​		 padding:0 87px 0 10px;
-
-​		 font-weight:400;
-
-​		 font-size:16px;
-
-​		 }
-
-\#menu #search{
-
-​	position:  absolute;
-
-​	top:15px;
-
-​	margin:0 0 0 5px;}
-
-\#menu #logo{
-
-​	padding:15px 87px 0 10px;
-
-​	}
-
-\#menu ul li a{
-
-​	text-decoration:none;
-
-​	color:#fff;
-
+#menu ul {
+		  display:block;	
+  		  padding:0 0 0 450px; 
+   		  margin:0; 
+          list-style-type:none;
+          height:35px;
+          }
+#menu ul li {	  float:left;
+		  }
+#menu ul li a p{
+		  display:block;
+		  padding:0 87px 0 10px;
+		  font-weight:400;
+		  font-size:16px;
+		  }
+#menu #search{
+	position:  absolute;
+	top:15px;
+	margin:0 0 0 5px;}
+#menu #logo{
+	padding:15px 87px 0 10px;
+	}
+#menu ul li a{
+	text-decoration:none;
+	color:#fff;
 }
-
-\#menu ul li a:hover{
-
-​	color:#757575;}
-
-\#middle img{
-
-​	width:100%;
-
-​	height:795px;
-
+#menu ul li a:hover{
+	color:#757575;}
+#middle img{
+	width:100%;
+	height:795px;
 }
-
-\#images{
-
-​	background-color:# FFF;}
-
-\#images ul li{
-
-​	list-style-type:none;
-
-​	top:850px;
-
-​	position: absolute;
-
-​	padding-top:5px;	
-
+#images{
+	background-color:# FFF;}
+#images ul li{
+	list-style-type:none;
+	top:850px;
+	position: absolute;
+	padding-top:5px;	
 }
-
-\#images ul li.iPhone4s{	
-
-​	left:0px;
-
+#images ul li.iPhone4s{	
+	left:0px;}
+#images ul li.iPad{
+	left:475px;
 }
-
-\#images ul li.iPad{
-
-​	left:475px;
-
-}
-
-\#images ul li.iPod{
-
-​	left:955px;
-
+#images ul li.iPod{
+	left:955px;
 }#images ul li.AppleStore{
-
-​	left:1420px;
-
+	left:1420px;
 }
+#bottom{
+	position:relative;
+	top:190px;
+	float:left;}
 
-\#bottom{
-
-​	position:relative;
-
-​	top:190px;
-
-​	float:left;}
-
- 
-
-\#bottom ul{
-
-​	list-style-type:none;
-
-​	font-size:1em;
-
-​	color:#666;
-
-​	font-size:12px;
-
-​	width:120px;
-
-​	text-align:left;
-
-​	}
-
-\#bottom  ul h3{
-
-​	font-size:12px;
-
-​	color:#333;
-
-​	width:100px;
-
-​	text-align:left;
-
-​	}
-
-\#bottom .bottom1{
-
-​	position: absolute;
-
-​	left:460px;}
-
-\#bottom .bottom2{
-
-​	position: absolute;
-
-​	left:655px;}
-
-\#bottom .bottom3{
-
-​	position: absolute;
-
-​	left:850px;}
-
-\#bottom .bottom4{
-
-​	position: absolute;
-
-​	left:1048px;}
-
-\#bottom .bottom5{
-
-​	position: absolute;
-
-​	left:1240px;}
-
-\#footer{
-
-​	position: relative;
-
-​	top:410px;
-
-​	font-size:1em;
-
-​	clear:both;
-
-​	}
-
-\#footer ul {
-
-​	position: absolute;
-
-​	left:600px;
-
-​	list-style-type:none;
-
-​	
-
-​	}
-
-\#footer ul li {
-
-​	padding:0 10px 0 0;
-
-​	float:left;
-
-​	color:#666666;
-
-​	}
-
-\#footer ul li a{
-
-​	text-decoration:none;
-
-​	color:#666666;
-
-​	width:1px;
-
-​	}
-
+#bottom ul{
+	list-style-type:none;
+	font-size:1em;
+	color:#666;
+	font-size:12px;
+	width:120px;
+	text-align:left;
+	}
+#bottom  ul h3{
+	font-size:12px;
+	color:#333;
+	width:100px;
+	text-align:left;
+	}
+#bottom .bottom1{
+	position: absolute;
+	left:460px;}
+#bottom .bottom2{
+	position: absolute;
+	left:655px;}
+#bottom .bottom3{	position: absolute;
+	left:850px;}
+#bottom .bottom4{
+	position: absolute;
+	left:1048px;}
+#bottom .bottom5{
+	position: absolute;
+	left:1240px;}
+#footer{
+	position: relative;
+	top:410px;
+	font-size:1em;
+	clear:both;
+	}
+#footer ul {
+	position: absolute;left:600px;
+	list-style-type:none;
+	
+	}
+#footer ul li {
+	padding:0 10px 0 0;
+	float:left;
+	color:#666666;
+	}
+#footer ul li a{
+	text-decoration:none;
+	color:#666666;
+	width:1px;
+	}
 </style>
 ```
 
@@ -342,27 +229,17 @@ body{
 
 1、IE7.0下测试结果
 
-![img](file:///C:\Users\YLD\AppData\Local\Temp\ksohtml6620\wps3.jpg) 
+![img](./images/applecss(3).jpg) 
 
-![img](file:///C:\Users\YLD\AppData\Local\Temp\ksohtml6620\wps4.jpg) 
-
-图2 IE7.0测试结果
-
- 
+![img](./images/applecss(4).jpg) 
 
 2、FF下测试结果
 
- 
+![img](./images/applecss(5).jpg) 
 
-![img](file:///C:\Users\YLD\AppData\Local\Temp\ksohtml6620\wps5.jpg) 
+![img](./images/applecss(6).jpg) 
 
-![img](file:///C:\Users\YLD\AppData\Local\Temp\ksohtml6620\wps6.jpg) 
-
-图3 FF下测试结果
-
- 
-
-***\*七、心得体会。\****
+## 七、心得体会。
 
  时间过得很快，一学期的web的学习要暂时告一段落了。作为一个这学期刚转专业到计科的学生，在刚开始接触各类专业课程的时候，都会有一些迷茫。但经过一段时间的学习，我感觉web是3门专业课程里最有意思的，也是最轻松的。这个学期，每节课都跟着刘老师打代码，逐渐的掌握ccs+div的应用。尤其是最后几节的综合应用，对作业中的排版和导航条设计帮助很大。
 
@@ -371,11 +248,3 @@ body{
 做网页的时候我感觉还是要一步一步来，和上面说的一样设计代码也要按顺序来和层次来一步步的设计（先大盒子再小盒子），同时做好位置和浮动。通过这次大作业的制作也让我巩固了本学期的web制作的知识。
 
 以上就是我个人对于网页制作和这次大作业制作的一些心得，以后也希望能学习更多的网页设计的相关知识（JSP之类的），最后还是要谢谢刘老师这个学期的教学工作，对我的帮助很大。
-
-
-
-![img](file:///C:\Users\YLD\AppData\Local\Temp\ksohtml6620\wps7.jpg)
-
-
-
-![img](file:///C:\Users\YLD\AppData\Local\Temp\ksohtml6620\wps8.jpg) 
